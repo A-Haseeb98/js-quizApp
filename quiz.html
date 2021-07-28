@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="printData()">
+
+    <div>
+
+        <h2 id="heading">Question 1</h2>
+
+        <p id="question"></p>
+
+        <input type="radio" onclick="buttonOnOff()" id="opt1" class="radioBtn" name="answer" value="Answer 1">
+        <label class="label" onclick="buttonOnOff()" for="opt1">answer 1</label>
+        <br>
+
+        <input type="radio" onclick="buttonOnOff()" name="answer" id="opt2" class="radioBtn" value="Answer 2">
+        <label class="label" for="opt2" onclick="buttonOnOff()">answer 2</label>
+
+        <br>
+        <input type="radio" name="answer" onclick="buttonOnOff()" id="opt3" class="radioBtn" value="Answer 3">
+        <label onclick="buttonOnOff()" class="label" for="opt3">answer 3</label>
+        <br>
+        <input onclick="buttonOnOff()" type="radio" name="answer" id="opt4" class="radioBtn" value="Answer 4">
+        <label onclick="buttonOnOff()" class="label" onclick="buttonOnOff()" for="opt4">answer 4</label>
+        <br><br>
+        <button disabled id="btn" onclick="nextQuestion()">Next</button>
+    </div>
+
+    <script src="app.js"> </script>
+</body>
+
+</html>
